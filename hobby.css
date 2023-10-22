@@ -1,5 +1,5 @@
 body {
-    margin: 0; /* Убираем отступы у body */
+    margin: 0;
     padding: 0;
     font-size: 16px;
   }
@@ -7,56 +7,68 @@ body {
   .header {
     display: flex;
     background-color: #101010;
-    align-items: center; /* Выравнивание по центру вертикально */
+    align-items: center;
   }
   
   .logo-container {
     width: 30%;
     color: white;
-    justify-content: center;
   }
-
-  .logo-container h1{
+  
+  .logo-container h1 {
     margin: 5% 5% 5% 10%;
-    font-size: 150%;
+    font-size: 24px; /* Изменим размер шрифта на более читаемый */
   }
-
+  
   .navigation {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Правое выравнивание элементов */
-    font-size: 100%;
+    justify-content: flex-end;
+  }
+  
+  .navigation li {
+    list-style: none; /* Уберем маркеры списка */
+    margin-right: 20px; /* Добавим отступы между элементами меню */
   }
   
   .navigation a {
     text-decoration: none;
     color: white;
-    padding: 0 20px;
   }
   
   .navigation a:hover {
-    background-color: gray;
+    color: gray;
+  }
+
+  .navigation li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  .navigation li:hover a {
+    background-color: red;
     color: #101010;
   }
-  .content{
+  
+  .content {
     display: flex;
     margin: 0;
     padding: 0;
   }
-  .images{
-    justify-content: center;
+  
+  .images {
     text-align: center;
-    margin: 20%;
+    margin: 20px; /* Заменим проценты на пиксели */
   }
-  .imagess{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  
+  .imagess {
+    max-width: 100%; /* Чтобы изображение не выходило за пределы контейнера */
+    height: auto;
   }
-  .txt{
-    margin: 15% 5% 5% 5%;
+  
+  .txt {
+    margin: 15px 5%; /* Заменим проценты на пиксели */
     width: 50%;
-    padding: 0;
     text-align: center;
   }
+  
